@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>与互</title>
+
+    <style>
+        :root,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .backgrounds {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            animation: scroll 60s linear infinite;
+        }
+
+        .background {
+            height: 100vh;
+        }
+
+        .container {
+            width: 50%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 1rem;
+            padding: 1rem;
+            background: #ffffffcc;
+            box-shadow: 0 .25rem 1rem #ffffff;
+        }
+
+        .character {
+            height: 30rem;
+            margin-left: -15rem;
+        }
+
+        .character-name {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        .character-description {
+            color: #6c757d;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .find-me {
+            margin-top: 5rem;
+        }
+
+        .find-me-title {
+            font-size: 1.5rem;
+        }
+
+        .find-me-links {
+            margin-top: 2rem;
+        }
+
+        .find-me-link {
+            text-decoration: none;
+            color: white;
+            background-color: #008060;
+            padding: 0.5rem 1.5rem;
+            transition: background-color 500ms;
+        }
+
+        .find-me-link:hover {
+            background-color: #006e52;
+        }
+
+        .card-right-image {
+            height: 30rem;
+        }
+
+        @keyframes scroll {
+            0%, 100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX( calc(-100% + 100vw) );
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backgrounds">
+        <img class="background" src="2.png" />
+        <img class="background" src="3.png" />
+        <img class="background" src="4.png" />
+        <img class="background" src="5.png" />
+        <img class="background" src="6.png" />
+        <img class="background" src="7.png" />
+        <img class="background" src="8.png" />
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img class="character" src="1.png" />
+
+            <div class="card-body">
+                <h1 class="character-name">与互</h1>
+                <h4 class="character-description">一只橙绿色的小狐狸, 日常喜欢玩几何冲刺, cfm, 金铲铲之战</h4>
+
+                <div class="find-me">
+                    <div class="find-me-title">你可以在这些地方找到我</div>
+
+                    <div class="find-me-links">
+                        <a href="https://wpa.qq.com/msgrd?uin=2647532706" class="find-me-link">QQ</a>
+                        <a href="https://space.bilibili.com/35482138" class="find-me-link">哔哩哔哩</a>
+                        <a href="https://x.com/yh14725800" class="find-me-link">X</a>
+                    </div>
+                </div>
+            </div>
+
+            <img class="card-right-image" src="9.png"/>
+        </div>
+    </div>
+</body>
+
+</html>
